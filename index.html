@@ -2,12 +2,13 @@
 <html lang="id">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T3R9JMC73F"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V8BY104LJY"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-T3R9JMC73F');
+
+  gtag('config', 'G-V8BY104LJY');
 </script>
 
 <meta charset="UTF-8">
@@ -49,6 +50,7 @@ button:hover { background:#1976D2; }
 </style>
 </head>
 <body>
+
 <header>
   <div class="container">
     <h1>My Shop</h1>
@@ -63,12 +65,14 @@ button:hover { background:#1976D2; }
   </div>
 </header>
 
+<!-- Beranda / Produk -->
 <section id="home">
   <h2>Beranda</h2>
-  <p>Step into Style! Temukan koleksi sneakers terbaru dan trendi di My Shop...</p>
+  <p>Step into Style! Temukan koleksi sneakers terbaru dan trendi di My Shop. Dari Nike hingga Vans, gaya dan kenyamanan dalam setiap langkahmu. Belanja sekarang dan jadilah yang terkeren!</p>
   <div class="products" id="products"></div>
 </section>
 
+<!-- Cart -->
 <div id="cart">
   <h2>Keranjang Belanja</h2>
   <ul id="cart-items"></ul>
@@ -76,11 +80,13 @@ button:hover { background:#1976D2; }
   <button id="checkout-btn" onclick="checkout()">Pesan Sekarang via WhatsApp</button>
 </div>
 
+<!-- Tentang Kami -->
 <section id="about">
   <h2>Tentang Kami</h2>
-  <p>Selamat datang di My Shop...</p>
+  <p>Selamat datang di My Shop, surga bagi para pecinta sepatu! Kami menghadirkan koleksi sneakers dan footwear trendi dari merek-merek ternama dengan kualitas premium...</p>
 </section>
 
+<!-- Kontak -->
 <section id="contact">
   <h2>Kontak</h2>
   <p>Email: apriadi@gmail.com</p>
@@ -89,7 +95,7 @@ button:hover { background:#1976D2; }
 </section>
 
 <script>
-// Daftar produk
+// Produk
 const products = [
   { id:1, name:"Nike Court Vision Low Next Nature", price:1500000, image:"images/sepatu1.webp" },
   { id:2, name:"Nike Dunk Low", price:3000000, image:"images/sepatu2.webp" },
@@ -155,5 +161,6 @@ const menuToggle = document.getElementById('menu-toggle');
 const navbar = document.getElementById('navbar');
 menuToggle.addEventListener('click',()=>{ navbar.classList.toggle('active'); });
 </script>
+
 </body>
 </html>
